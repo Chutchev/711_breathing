@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+
+.mainWindow {
+    background: url("../images/background2.png") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 75%;
+    margin: 2em auto;
+    display: block;
+}
+.header h1 {
+    color: #f3f3f3;
+    text-align: left;
+    font-size: 40px;
+    font-family: "Open Sans Condensed", serif;
+
+}
+.header hr {
+    filter: brightness(50%);
+}
+
+.header .technique-title{
+    display: inline-block;
+    cursor: pointer;
+}
