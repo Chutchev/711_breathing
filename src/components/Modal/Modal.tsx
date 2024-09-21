@@ -30,7 +30,10 @@ function Modal(props: IModal) {
             </div>
 
         </div>
-        <div className={"X"} onClick={props.Close}>x</div>
+        <div className={"X"} onClick={props.Close}><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 0.758545L13 12.7585M13 0.758545L1 12.7585" stroke="white" stroke-opacity="0.25" stroke-linecap="round"/>
+        </svg>
+        </div>
     </div>)
 }
 

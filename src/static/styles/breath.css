@@ -1,0 +1,33 @@
+.breath-cirlce {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: breathe 18000ms infinite;
+    margin: 0 auto;
+}
+
+@keyframes breathe {
+    0% {
+        opacity: 0.2;
+        transform: scale(.5);
+        background-color: #d9d9d9;
+        box-shadow: 0 0 12px 25px #d9d9d9;
+    }
+    39% {
+        opacity: 0.5;
+        transform: scale(1);
+        background-color: #d9d9d9;
+        box-shadow: 0 0 25px 50px #d9d9d9;
+    }
+    39.1% {
+        opacity: 0.5;
+        box-shadow: 0 0 25px 50px #00e0ff;
+        background-color: #00e0ff;
+    }
+    100% {
+        transform: scale(.5);
+        box-shadow: 0 0 12px 25px #00e0ff;
+        background-color: #00e0ff;
+        opacity: 0.2;
+    }
+}
