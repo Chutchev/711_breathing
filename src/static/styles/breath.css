@@ -4,6 +4,14 @@
     height: 150px;
     animation: breathe 18000ms infinite;
     margin: 0 auto;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.breath-cirlce div {
+    margin-left: auto;
+    margin-right: auto
 }
 
 @keyframes breathe {

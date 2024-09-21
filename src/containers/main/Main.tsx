@@ -11,7 +11,6 @@ function Main() {
     const [isModalActive, setModalActive] = useState(false);
     const [current, setCurrent] = useState(4)
     const [isTimer, setIsTimer] = useState(false)
-
     const handleWhatIs = () => {
         setModalActive(true)
     }
@@ -33,19 +32,20 @@ function Main() {
     const start = () => {
         setIsTimer(true)
     }
-
-    useEffect(()=>{
+    useEffect(() => {
         let timer: string | number | NodeJS.Timeout | undefined;
         if (isTimer) {
-            setTimeout(()=>{
+            setTimeout(() => {
                 setIsTimer(false)
                 setCurrent(5)
             }, current * 18000)
+
             timer = setInterval(() => {
                 lt()
             }, 18000)
+
         }
-        return () => clearInterval(timer)
+        return () => {clearInterval(timer)};
     }, [isTimer])
 
     return (<div className={"mainWindow"}>
