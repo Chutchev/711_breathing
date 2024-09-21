@@ -5,6 +5,7 @@ import {useEffect, useState} from "react";
 import Cycles from "../../components/Cycles/Cycles";
 import Circle from "../../components/Circle/Circle";
 import OtherCycle from "../../components/Cycles/OtherCycle";
+import Button from "../../components/Button/buttonStop";
 
 
 function Main() {
@@ -32,6 +33,10 @@ function Main() {
     const start = () => {
         setIsTimer(true)
     }
+
+    const stop = () => {
+        setIsTimer(false)
+    }
     useEffect(() => {
         let timer: string | number | NodeJS.Timeout | undefined;
         if (isTimer) {
@@ -57,6 +62,7 @@ function Main() {
         {isTimer && (<div className={"window-2"}>
             <OtherCycle current={current}></OtherCycle>
             <Circle></Circle>
+            <Button title={"Стоп"} action={stop} class={"button-stop"}></Button>
         </div>)}
     </div>)
 }

@@ -2,6 +2,7 @@ import {MouseEventHandler} from "react";
 import "../../static/styles/cycles.css"
 import ArrowLeft from "./lt";
 import ArrowRight from "./gt";
+import Button from "../Button/buttonStop";
 interface ICycles{
     current: number
     gt: MouseEventHandler<HTMLDivElement>
@@ -22,7 +23,7 @@ function Cycles(props: ICycles) {
             </div>
             <ArrowRight action={props.gt}></ArrowRight>
         </div>
-        <div onClick={props.start} className={"start-button"}>Старт</div>
+        <Button title={"Старт"} action={props.start} class={"start-button"}></Button>
     </div>)
 }
 
