@@ -14,6 +14,45 @@
     margin-right: auto
 }
 
+@media (max-width: 1920px) {
+    .breath-cirlce {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        animation: breatheUp1080 18s infinite;
+        margin: 120px auto;
+        font-size: 100px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1600px) {
+    .breath-cirlce {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        animation: breatheUp900 18s infinite;
+        margin: 80px auto;
+        font-size: 80px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1280px) {
+    .breath-cirlce {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        animation: breatheUp720 18s infinite;
+        margin: 60px auto;
+        font-size: 60px;
+        display: flex;
+        align-items: center;
+    }
+}
+
 @keyframes breatheUp {
     0% {
         opacity: 0.2;
@@ -39,6 +78,99 @@
     100% {
         transform: scale(.5);
         box-shadow: 0 0 50px 100px #00e0ff;
+        background-color: #00e0ff;
+        opacity: 0.2;
+        color: #d9d9d9;
+    }
+}
+
+@keyframes breatheUp1080 {
+    0% {
+        opacity: 0.2;
+        transform: scale(.5);
+        background-color: #d9d9d9;
+        box-shadow: 0 0 30px 70px #d9d9d9;
+        color: #00e0ff;
+    }
+    39% {
+        opacity: 0.5;
+        transform: scale(1);
+        background-color: #d9d9d9;
+        box-shadow: 0 0 60px 140px #d9d9d9;
+        color: #00e0ff;
+    }
+    39.1% {
+        opacity: 0.5;
+        transform: scale(1);
+        box-shadow: 0 0 60px 140px #00e0ff;
+        background-color: #00e0ff;
+        color: #d9d9d9;
+    }
+    100% {
+        transform: scale(.5);
+        box-shadow: 0 0 30px 70px #00e0ff;
+        background-color: #00e0ff;
+        opacity: 0.2;
+        color: #d9d9d9;
+    }
+}
+
+@keyframes breatheUp900 {
+    0% {
+        opacity: 0.2;
+        transform: scale(.5);
+        background-color: #d9d9d9;
+        box-shadow: 0 0 20px 50px #d9d9d9;
+        color: #00e0ff;
+    }
+    39% {
+        opacity: 0.5;
+        transform: scale(1);
+        background-color: #d9d9d9;
+        box-shadow: 0 0 40px 100px #d9d9d9;
+        color: #00e0ff;
+    }
+    39.1% {
+        opacity: 0.5;
+        transform: scale(1);
+        box-shadow: 0 0 40px 100px #00e0ff;
+        background-color: #00e0ff;
+        color: #d9d9d9;
+    }
+    100% {
+        transform: scale(.5);
+        box-shadow: 0 0 20px 50px #00e0ff;
+        background-color: #00e0ff;
+        opacity: 0.2;
+        color: #d9d9d9;
+    }
+}
+
+@keyframes breatheUp720 {
+    0% {
+        opacity: 0.2;
+        transform: scale(.5);
+        background-color: #d9d9d9;
+        box-shadow: 0 0 12px 30px #d9d9d9;
+        color: #00e0ff;
+    }
+    39% {
+        opacity: 0.5;
+        transform: scale(1);
+        background-color: #d9d9d9;
+        box-shadow: 0 0 20px 60px #d9d9d9;
+        color: #00e0ff;
+    }
+    39.1% {
+        opacity: 0.5;
+        transform: scale(1);
+        box-shadow: 0 0 20px 60px #00e0ff;
+        background-color: #00e0ff;
+        color: #d9d9d9;
+    }
+    100% {
+        transform: scale(.5);
+        box-shadow: 0 0 12px 30px #00e0ff;
         background-color: #00e0ff;
         opacity: 0.2;
         color: #d9d9d9;

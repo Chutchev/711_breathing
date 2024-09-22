@@ -26,3 +26,48 @@
     font-size: 50px;
 }
 
+@media (max-width: 1600px) {
+    .remain-current{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        margin-right: 8em;
+        font-size: 25px;
+        font-family: "Open Sans Condensed", serif;
+    }
+
+    .remain-current .numbers {
+        display: flex;
+        align-self: flex-end;
+        align-items: flex-end;
+        gap: 20px;
+        font-size: 40px;
+    }
+
+    .remain-current .not-current {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .remain-current{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        margin-right: 7em;
+        font-size: 25px;
+        font-family: "Open Sans Condensed", serif;
+    }
+
+    .remain-current .numbers {
+        display: flex;
+        align-self: flex-end;
+        align-items: flex-end;
+        gap: 20px;
+        font-size: 30px;
+    }
+
+    .remain-current .not-current {
+        font-size: 25px;
+    }
+}
