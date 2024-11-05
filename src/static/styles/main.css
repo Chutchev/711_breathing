@@ -43,3 +43,17 @@ body {
         font-size: 30px;
     }
 }
+
+@media (max-width: 1920px) {
+    .header {
+        width: 75%;
+        margin: 1em auto;
+        display: block;
+    }
+
+    .header h1 {
+        color: #f3f3f3;
+        text-align: left;
+        font-size: 25px;
+    }
+}
