@@ -63,25 +63,6 @@
     margin: auto;
 }
 
-@media (max-width: 1920px) {
-    .start-button {
-        height: 120px;
-        width: 120px;
-        margin: 50px auto;
-        background: linear-gradient(135deg, #FF9900 0%, #674512 100%);
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 24px;
-        cursor: pointer;
-    }
-
-    .choose-cycles p {
-        font-size: 30px;
-    }
-}
-
 @media (max-width: 1600px) {
 
     .start-button {
@@ -149,7 +130,7 @@
     .start-button {
         height: 150px;
         width: 150px;
-        margin: 100px auto;
+        margin: 10px auto;
         background: linear-gradient(135deg, #FF9900 0%, #674512 100%);
         border-radius: 50%;
         display: flex;
