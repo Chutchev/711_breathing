@@ -1,4 +1,5 @@
 import "../../static/styles/otherCycle.css"
+import {useEffect, useState} from "react";
 
 interface IOtherCycle {
     current: number
@@ -6,7 +7,7 @@ interface IOtherCycle {
 
 function OtherCycle(props: IOtherCycle){
 return <div className={"remain-current"}>
-    <p>Оставшееся количество циклов</p>
+    <p className={"cycles"}>Оставшееся количество циклов</p>
     <div className={"numbers"}>
         <div className={"previous not-current"}>{!(props.current - 1 < 0)?props.current - 1:"Заканчиваем"}</div>
         <div className={"current"}>{props.current}</div>

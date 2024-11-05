@@ -1,12 +1,11 @@
-import "../../static/styles/main.css"
+import "../../static/styles/main.css";
+import { useEffect, useState } from "react";
 import Header from "../../components/Header/header";
 import Modal from "../../components/Modal/Modal";
-import {useEffect, useState} from "react";
 import Cycles from "../../components/Cycles/Cycles";
 import Circle from "../../components/Circle/Circle";
 import OtherCycle from "../../components/Cycles/OtherCycle";
 import Button from "../../components/Button/buttonStop";
-
 
 function Main() {
     const [isModalActive, setModalActive] = useState(false);
@@ -51,7 +50,7 @@ function Main() {
 
         }
         return () => {clearInterval(timer)};
-    }, [isTimer])
+    }, [isTimer, current])
 
     return (<div className={"mainWindow"}>
         <Header WhatIs={handleWhatIs}></Header>
